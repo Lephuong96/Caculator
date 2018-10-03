@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <h2>Caculator</h2>
+</head>
+<body>
+    <from>
+        <input name="A" type="Number"  id="A">
+        <input name="B" type="Number"  id="B">
+    </from>
+    <script>
+        function Addition() {
+            var Avalue = parseInt(document.getElementById('A').value);
+            var Bvalue = parseInt(document.getElementById('B').value);
+            var Add = Avalue + Bvalue;
+            document.write("Result Addition: " + Add);
+        }
+        function Subtraction() {
+            var Avalue = document.getElementById('A').value;
+            var Bvalue = document.getElementById('B').value;
+            var Sub = Avalue - Bvalue;
+            document.write("Result Subtraction: " + Sub);
+        }
+        function Multiplication() {
+            var Avalue = document.getElementById('A').value;
+            var Bvalue = document.getElementById('B').value;
+            var Mul = Avalue * Bvalue;
+            document.write("Result Multiplication: " + Mul);
+        }
+        function Division() {
+            var Avalue = document.getElementById('A').value;
+            var Bvalue = document.getElementById('B').value;
+            var Div = Avalue / Bvalue;
+            document.write("Result Division: " + Div);
+        }
+    </script>
+    <button type="button" onclick="Addition();"> Addition(+) </button>
+    <button type="button" onclick="Subtraction();"> Subtraction(-) </button>
+    <button type="button" onclick="Multiplication();"> Multiplication(x) </button>
+    <button type="button" onclick="Division();"> Division(/) </button>
+</body>
+</html>
